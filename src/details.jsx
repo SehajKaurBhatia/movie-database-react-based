@@ -8,15 +8,17 @@ const Details=()=>{
 const navigate=useNavigate();
 const location=useLocation();
 const [Info,setInfo]=useState("");
-const movieName=location.state.movieName;
+const movieName=location.state?.movieName;
 // const [movieName,setMovieName]=useState(null);
 const apiKey="f7fac88a";
     useEffect(()=>{
         const fetchMovieData= async ()=> {
             try{
+                 console.log("Fetching data for movie:", movieName);
         const response=await axios.get(
             "http://www.omdbapi.com/?apikey=" + apiKey + "&s=" + movieName + ""
         );
+                 console.log("API Response:", response.data);
         setInfo(response.data);
             }
     catch(error){
