@@ -16,7 +16,7 @@ const apiKey="f7fac88a";
             try{
                  console.log("Fetching data for movie:", movieName);
         const response=await axios.get(
-            "http://www.omdbapi.com/?apikey=" + apiKey + "&s=" + movieName + ""
+            "https://www.omdbapi.com/?apikey=" + apiKey + "&s=" + movieName + ""
         );
                  console.log("API Response:", response.data);
         setInfo(response.data);
