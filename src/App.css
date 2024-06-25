@@ -1,0 +1,73 @@
+.app-background{
+  position: absolute;
+  background: url(/images/background4.jpg);
+  /* background-color: aqua; */
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  width:100%;
+ /* overflow: hidden; */
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+  position: absolute;
+  margin:0 auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(250, 235, 215,0.7);
+  width:22%;
+  padding: 50px 75px ;
+  border-radius: 15px;
+  color: rgb(60, 56, 3);
+}
+.container:hover{
+  color: rgb(60, 78, 4);
+  border:5px solid rgb(63, 63, 1);
+  
+}
+h1{
+ font-size: 50px;
+}
+p{
+  font-size: larger;
+  font-weight: 600;
+}
+input{
+  background: transparent;
+  border:1px solid rgb(63, 63, 1);
+  border-radius:5px;
+  font-size: 20px;  
+  padding:10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  color: rgb(60, 78, 4);
+}
+input:focus{
+  
+  outline: none;
+  border: 1px solid;
+  border-color: #2a870c;
+  background: transparent;
+ box-shadow:0 0 10px #034206;
+}
+button{
+  position: absolute;
+  top:70.5%;
+  left:74%;
+  color:white;
+  background-color: #2a870c;
+  border:1px solid rgb(42, 135, 12);
+  border-radius: 15px;
+  width:50px;
+  height:40px;
+  font-size: 15px;
+}
+button:hover{
+  background-color: #326920;
+}
+button:focus{
+  border:1px solid rgb(63, 63, 1);
+box-shadow:0 0 7px #3dd90a;
+}
